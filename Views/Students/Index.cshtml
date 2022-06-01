@@ -3,9 +3,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
+<h1>STUDENTS</h1>
+<body id="arwin">
 <p>
+   <img src="https://static.vecteezy.com/system/resources/thumbnails/000/511/962/small/57_Student.jpg" width="10%" height="10%"><br>
     <a asp-action="Create">Create New</a>
 </p>
 <form asp-action="Index" method="get">
@@ -54,6 +55,7 @@
         }
     </tbody>
 </table>
+    </body>
 @{
     var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";
